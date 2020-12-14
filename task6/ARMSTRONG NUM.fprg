@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KRISHNA MURTY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-19 03:22:52 PM"/>
+        <attribute name="created" value="S1JJU0hOQSBNVVJUWTtERVNLVE9QLUU3U0U3RVI7MjAyMC0xMS0xOTswMjowNzowOSBQTTszMzIw"/>
+        <attribute name="edited" value="S1JJU0hOQSBNVVJUWTtERVNLVE9QLUU3U0U3RVI7MjAyMC0xMS0xOTswMzoyMjo1MiBQTTsxMjszNDc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, num, result, temp, r" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="result" expression="0"/>
+            <assign variable="temp" expression="num"/>
+            <while expression="temp!=0">
+                <assign variable="r" expression="temp%10"/>
+                <assign variable="result" expression="result+r*r*r"/>
+                <assign variable="temp" expression="temp/10"/>
+            </while>
+            <if expression="result==num">
+                <then>
+                    <output expression="&quot;it is an armstrong number&quot; &amp;result" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; it is not a armstrong number&quot; &amp;num" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
